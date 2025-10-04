@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+#app {
+        border-radius: 50px;
+        height: 100vh;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+ }
+ body {
+     margin: 0;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: url('assets/eggs/back.webp') center/cover no-repeat;
+
+ }
+.title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+ .egg-clickable {
+     width: 350px;
+     height: 350px;
+     cursor: pointer;
+ }
+ .egg-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     gap: 20px;
+     margin-right: 28px;
+ }
+.subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    width: 100%;
+}
+/* Screen 2 */
+.eggs-choice {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    cursor: pointer;
+
+}
+
+.egg-option {
+    text-align: center;
+}
+
+.soft-egg {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    top: 16px;
+}
+
+.hard-egg {
+    width: 160px;
+    height: 160px;
+    /*padding-top: 10px;*/ /* Compense la différence */
+    position: relative;
+}
+
+.egg-label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.eggcon{
+    margin-left: 6%;
+}
+.timer {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    display: none; /* Caché au début */
+     text-align: center; /* ← AJOUTE ÇA */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}

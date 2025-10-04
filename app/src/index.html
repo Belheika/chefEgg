@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChefEgg</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--screen1-->
+<div id="screen1" class="screen active">
+    <h1 class="title">What are we making today?</h1>
+
+    <div class="egg-container">
+    <img src="assets/eggs/firstdancingegg.gif" class="egg-clickable" onclick="getStarted()" alt="dancing egg">
+
+    </div>
+    <p class="subtitle">Click the dancing egg :)</p>
+
+</div>
+<!--screen2-->
+<div id="screen2" class="screen">
+    <h1 class="title" id="title2">How do you like your eggs cooked?</h1>
+
+    <div class="eggs-choice">
+        <div class="egg-option" onclick="startSoftEgg()">
+            <img src="assets/eggs/goodeggs.gif" class="soft-egg">
+            <p class="egg-label">Mmmh runny eggs</p>
+        </div>
+        <div class="egg-option" onclick="startHardEgg()">
+            <img src="assets/eggs/boiledegg.gif" class="hard-egg">
+            <p class="egg-label">Oh, a hard egg</p>
+        </div>
+    </div>
+</div>
+
+<div id="screen3" class="screen">
+    <h1 class="title">Click the egg for starting the timer
+    </h1>
+    <div class="timer" id="timer-display"></div>
+
+    <div class="eggcon">
+        <img src="assets/eggs/eggy1.png" class="egg-clickable" onclick="startCooking()" id="cooking-egg">
+        <p class="subtitle">Be ready to run :D</p>
+
+    </div>
+</div>
+
+<script src="./main.js"></script>
+
+</body>
+</html>
