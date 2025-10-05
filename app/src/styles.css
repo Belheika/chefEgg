@@ -44,14 +44,15 @@
     margin-top: 20px;
     color: #666;
     width: 100%;
+    margin-left: -10px;
 }
 /* Screen 2 */
+
 .eggs-choice {
     display: flex;
     justify-content: center;
     gap: 50px;
     cursor: pointer;
-
 }
 
 .egg-option {
@@ -68,7 +69,6 @@
 .hard-egg {
     width: 160px;
     height: 160px;
-    /*padding-top: 10px;*/ /* Compense la différence */
     position: relative;
 }
 
@@ -89,6 +89,55 @@
     width: 100%;
     margin-top: 10px;
 }
+.egg-finished {
+    width: 350px;
+    height: 350px;
+    margin-left: -10px;
+}
+
+#screen4 .title {
+    font-weight: bold;
+}
+
+.titlebar {
+  height: 30px;
+  background: #your-color;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.titlebar-btn {
+ /* width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;*/
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+
+
+#close{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .screen {
     display: none;

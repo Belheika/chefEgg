@@ -36,14 +36,22 @@
 </div>
 
 <div id="screen3" class="screen">
-    <h1 class="title">Click the egg for starting the timer
+    <button id="mute-btn-3" onclick="toggleMute()" style="position: absolute; top: 10px; right: 10px;">🔊</button>    <h1 class="title">Click the egg for starting the timer
     </h1>
     <div class="timer" id="timer-display"></div>
 
     <div class="eggcon">
         <img src="assets/eggs/eggy1.png" class="egg-clickable" onclick="startCooking()" id="cooking-egg">
         <p class="subtitle">Be ready to run :D</p>
+        <!--onclick="skipToFinish()"-->
+    </div>
+</div>
 
+<div id="screen4" class="screen">
+    <button id="mute-btn-4" onclick="toggleMute()" style="position: absolute; top: 10px; right: 10px;">🔊</button>    <h1 class="title">TAKE THE EGGS OUT !</h1>
+    <div class="egg-container">
+        <img src="assets/eggs/happycookedegg.gif" class="egg-finished">
+        <p class="subtitle" onclick="backToStart()" style="cursor: pointer;margin-left:28px;">EGGS</p>
     </div>
 </div>
 
